@@ -65,7 +65,7 @@ def register():
         )
 
         session['registration_session_data'] = session_data
-        return jsonify(credential_options)
+        return jsonify({'message': 'Registration successful!'})
 
     return render_template('register.html')
 
