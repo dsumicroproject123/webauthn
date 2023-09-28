@@ -45,12 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       if (response.ok) {
-        alert('Registration successful! You can now login.');
-      } else {
-        const data = await response.json();
-        alert(`Registration error: ${data.message}`);
-      }
-    } catch (error) {
+         const data = await response.json(); // Parse JSON response
+    alert(data.message); // Display a success message
+  } else {
+    const data = await response.json(); // Parse JSON error response
+    alert(`Registration error: ${data.message}`);
+  }
+} catch (error) {
       alert(`Registration error: ${error.message}`);
     }
   });
