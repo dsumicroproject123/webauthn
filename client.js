@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       challenge: new Uint8Array(32), // You should generate a proper challenge on the server
       rp: {
         name: "",
-        id: "http://127.0.0.1:5000", // Update with your Flask server URL
+        id: "dsumicroproject.github.io", // Update with your Flask server URL
       },
       user: {
         id: new Uint8Array(32), // Generate a user ID
