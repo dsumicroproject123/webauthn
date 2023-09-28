@@ -14,7 +14,7 @@ app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 rp = RelyingParty(
     'WebAuthn Registration and Login',
     'https://dsumicroproject123.github.io/webauthn',  # Update with your app's URL
-    'http://127.0.0.1:5000/'  # Update with your app's ID
+    'dsumicroproject.github.io'  # Update with your app's ID
 )
 app.config['SQLALCHENY_DATABASE_URI'] ="sqlite:///User.db"
 app.config['SQLALCHENY_TRACk_MODIFICATION'] = False
