@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const publicKeyCredentialCreationOptions = {
       challenge: new Uint8Array(32), // You should generate a proper challenge on the server
       rp: {
-        name: "",
+        name: "WebAuthn Registration and Login",
         id: "dsumicroproject.github.io", // Update with your Flask server URL
       },
       user: {
