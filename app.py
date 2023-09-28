@@ -13,11 +13,11 @@ app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 rp = RelyingParty(
     'WebAuthn Registration and Login',
-    'http://127.0.0.1:5000/',  # Update with your app's URL
+    'https://dsumicroproject123.github.io/webauthn',  # Update with your app's URL
     'http://127.0.0.1:5000/'  # Update with your app's ID
 )
 app.config['SQLALCHENY_DATABASE_URI'] ="sqlite:///User.db"
-app.config['SQLALCHENY_TTACH_MODIFICATION'] = False
+app.config['SQLALCHENY_TRACk_MODIFICATION'] = False
 db = SQLAlchemy(app)
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
